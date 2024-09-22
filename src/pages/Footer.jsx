@@ -2,8 +2,8 @@ import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 import React from 'react';
 function Footer() {
   return (
-    <footer  dir='rtl'  className="bg-gray-800 flex justify-center items-center text-white py-7">
-      <div className="flex flex-col mt-[16px] justify-between items-center ">
+    <footer  dir='rtl'  className="bg-gray-800 flex max-sm:flex-col justify-center items-center text-white ">
+      <div className="flex mt-[16px] max-sm:flex-col justify-between items-center ">
         {/* Informations générales */}
         <div className="mb-6 md:mb-0">
           {/* <h2 className="text-2xl font-semibold">تواصل معنا</h2> */}
