@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      // ...
+      "lib": [
+        "esnext",
+        "dom" // <- add this
+      ],
+      "baseUrl": ".",
+      "paths": {
+        "@/*": [
+          "./src/*"
+        ]
+      }
+      // ...
+    }
+  }
