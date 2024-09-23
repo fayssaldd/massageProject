@@ -27,11 +27,13 @@ export default function Home() {
           <b className='[text-shadow:_0_4px_8px_#00BCD4] text-xl text-[#10c3da] border-b-2 border-black text-shadow'> تجربة فاخرة لجسمك وراحتك</b> <br /> دلل نفسك بتجربة مساج مريحة وأنت في منزلك. فريقنا من الأخصائيين يوفر جلسات مساج تعالج التوتر وتمنحك راحة فورية. اختر نوع المساج المناسب لك واستمتع بالتجربة التي تستحقها.
           </div>
           <div className='flex'>
-            <a href='https://wa.me/12345954' >
-              <MessageCircleCode className='bg-white w-9 h-9 p-1 hover:bg-slate-300 hover:scale-125 rounded-sm mr-4'/>
+            <a className="flex bg-green-500 text-white hover:bg-green-700 items-center justify-center p-3 rounded-sm" href='https://wa.me/12345954' >
+              <span className='mr-2'>حجز الآن</span>
+              <MessageCircleCode/>
             </a>
-            <a href='tel:342424453'>
-              <Phone className='bg-white w-9 h-9 p-1 hover:bg-slate-300 hover:scale-125 rounded-sm'/>
+            <a className="flex mx-4 bg-blue-500 text-white hover:bg-blue-600 items-center justify-center p-3 rounded-sm" href='tel:342424453'>
+              <span className='mr-2'>اتصال</span>
+              <Phone />
             </a>
           </div>
           {/* <div dir='rtl' className='font-semibold text-lg text-white italic'>

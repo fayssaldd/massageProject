@@ -26,7 +26,7 @@ export default function CardMassage({type,description,image,price}) {
                 </div>
                 <div className='flex'>
                   <a href='https://wa.me/12345954' >
-                    <MessageCircleCode className='bg-blue-500 text-white w-9 h-9 p-1 hover:bg-blue-300 hover:scale-125 rounded-sm mx-4'/>
+                    <MessageCircleCode className='bg-green-500 text-white w-9 h-9 p-1 hover:bg-green-600 hover:scale-125 rounded-sm mx-4'/>
                   </a>
                   <a href='tel:342424453'>
                     <Phone className='bg-blue-500 w-9 h-9 p-1  text-white hover:bg-blue-300 hover:scale-125 rounded-sm '/>

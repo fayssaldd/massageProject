@@ -135,7 +135,7 @@ export default function Massages() {
     },
     {
       "service": "باديكير",
-      "price": null,
+      "price": 400,
       "description": "جلسة عناية شاملة للقدمين، تشمل تنظيف وترطيب الأظافر وإزالة الجلد الميت، لضمان قدمين ناعمتين وأظافر صحية وجذابة."
       ,"image": fm1
     
