@@ -167,7 +167,7 @@ export default function Massages() {
         <div className='flex flex-wrap lg:w-[40rem] justify-center'>
         {
               massages.map((massage) => (
-                <div className="p-1  lg:w-[300px] w-[200px]">
+                <div className="p-1  lg:w-[300px] w-[350px]">
                     <CardMassage type={massage.service} price={massage.price} description={massage.description} image={massage.image} />
                 </div>
               ))

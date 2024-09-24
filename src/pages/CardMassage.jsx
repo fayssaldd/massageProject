@@ -16,11 +16,11 @@ export default function CardMassage({type,description,image,price}) {
                 <CardTitle>{type}</CardTitle>
                 {/* <CardDescription>{description}</CardDescription> */}
             </CardHeader>
-            <CardContent className="flex flex-col max-sm:h-[20rem] aspec-square mb-2 items-center justify-center ">
+            <CardContent className="flex flex-col aspec-square mb-2 items-center justify-center ">
                 <CardDescription>{description}</CardDescription>
-                <img className='rounded mt-2 w-[10rem] h-[10rem]' src={`${image}`} alt="" />
+                <img className='rounded mt-2 ' src={`${image}`} alt="" />
             </CardContent>
-            <CardFooter className={'flex  max-sm:flex-col justify-between items-center p-4 border-t-2'}>
+            <CardFooter className={'flex justify-between items-center p-4 border-t-2'}>
                 <div className='flex flex-row-reverse items-center justify-between max-sm:pb-4'>
                   <p className='text-slate-300 font-bold mx-2 line-through'>{price + 100}  ر.س</p>
                   <p className='text-red-500 font-bold font-mono'> {price}ر.س</p>
