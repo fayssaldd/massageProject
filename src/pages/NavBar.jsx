@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
-
+import logo from '../assets/logoa.png'
 export default function NavBar() {
   const [isShow,setIsShow] = useState(false);
   // const location = useLocation()
@@ -25,9 +25,9 @@ export default function NavBar() {
                   </button>
             </div>
             <div className="flex w-full items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex w-1/5  jusfit flex-shrink-0 items-center">
-                {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/> */}
-                <p className='italic'>MassageLogo</p>
+              <div className="flex  jusfit flex-shrink-0 items-center">
+                <img className="h-8 w-auto bg-transparent mr-2" src={logo} alt="Your Company"/>
+                <p className='italic text-primary'>SPA & MASSAGE</p>
 
               </div>
               <div className="hidden w-4/5 sm:ml-6 sm:block">
@@ -45,9 +45,9 @@ export default function NavBar() {
                   <Link to={'/'}className={`${'/' == location.pathname && 'bg-gray-700 text-white'} rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white`} >Home</Link> */}
                   {/* {user.name} */}
                   {/* <DropDownMenu/> */}
-                  <a className='rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white' href="#khadamtona">خدماتنا</a>
-                  <a className='rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white' href="#raisia">الرئيسية</a>
-                  <a className='rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white' href="#contact">
+                  <a className='rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-hover hover:text-white' href="#khadamtona">خدماتنا</a>
+                  <a className='rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-hover hover:text-white' href="#raisia">الرئيسية</a>
+                  <a className='rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-hover hover:text-white' href="#contact">
                   تواصل
                   معنا
                   </a>
@@ -61,9 +61,9 @@ export default function NavBar() {
           </div>       
         <div className={`${!isShow && "hidden"}`} id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
-            <a className=' block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white' href="#raisia">الرئيسية</a>
-            <a className=' block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white' href="#khadamtona">خدماتنا</a>
-            <a className=' block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white' href="#contact">تواصل
+            <a className=' block rounded-md px-3 py-2 text-base font-medium text-primary hover:bg-hover hover:text-white' href="#raisia">الرئيسية</a>
+            <a className=' block rounded-md px-3 py-2 text-base font-medium text-primary hover:bg-hover hover:text-white' href="#khadamtona">خدماتنا</a>
+            <a className=' block rounded-md px-3 py-2 text-base font-medium text-primary hover:bg-hover hover:text-white' href="#contact">تواصل
             معنا</a>
 
             {/* <Link to={DASHBOARD_ROUTE} className={`${DASHBOARD_ROUTE == location.pathname && 'bg-gray-700 text-white'} block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white`}>Dashboard</Link>

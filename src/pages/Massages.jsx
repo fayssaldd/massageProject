@@ -5,9 +5,12 @@ import massage2 from "../assets/images/massage2.jpg"
 import massage3 from "../assets/images/massage3.jpg"
 import massage4 from '../assets/images/massage4.jpg'
 import fm1 from '../assets/images/fm1.jpg'
-import fm2 from '../assets/images/fm2.jpg'
-import fm3 from '../assets/images/fm3.jpg'
-import fm4 from '../assets/images/fm4.png'
+import vip from '../assets/images/vip.png'
+import mvip from '../assets/images/mvip.jpg'
+import wax from '../assets/images/wax.jpg'
+import malaki from '../assets/images/malaki.jpg'
+import marocain from '../assets/images/marocain.jpg'
+import badikir from '../assets/images/badikir.jpg'
 // import massage5 from "../assets/images/massage5.jpg"
 // import massage6 from "../assets/images/massage6.jpg"
 import {
@@ -96,27 +99,27 @@ export default function Massages() {
       "service": "مساج VIP",
       "price": 500,
       "description": "تجربة فاخرة توفر لك أعلى مستويات الاسترخاء، يتم استخدام تقنيات مميزة لتخفيف التوتر وتنشيط الجسم، مثالية لمن يبحث عن جلسة علاجية راقية."
-      ,"image": fm1
+      ,"image": mvip
     },
     {
       "service": "مساج عادي",
       "price": 400,
       "description": "مساج تقليدي يركز على تخفيف التوتر العضلي وتحسين الدورة الدموية باستخدام حركات لطيفة ومريحة تناسب الجميع."
-      ,"image": fm1
+      ,"image": vip
     
     },
     {
       "service": "حمام ملكي",
       "price": 500,
       "description": "تجربة ملوكية مميزة، تجمع بين تنظيف عميق للجسم وتدليك مريح لتعزيز الشعور بالنظافة والنقاء مع الراحة التامة."
-      ,"image": fm1
+      ,"image": malaki
     
     },
     {
       "service": "حمام مغربي",
       "price": 450,
       "description": "تقليد شرقي قديم يستخدم الصابون الأسود المغربي والليفة التقليدية لتنقية البشرة وتجديدها، يخلص الجسم من السموم ويعزز الشعور بالانتعاش."
-      ,"image": fm1
+      ,"image": marocain
     
     },
     {
@@ -130,22 +133,22 @@ export default function Massages() {
       "service": "إزالة الشعر بالشمع (واكس)",
       "price": 400,
       "description": "طريقة فعالة وسريعة لإزالة الشعر، تزيل الشعر من الجذور وتترك البشرة ناعمة لأطول فترة ممكنة، مناسبة لجميع أنواع البشرة."
-      ,"image": fm1
+      ,"image": wax
     
     },
     {
       "service": "باديكير",
       "price": 400,
       "description": "جلسة عناية شاملة للقدمين، تشمل تنظيف وترطيب الأظافر وإزالة الجلد الميت، لضمان قدمين ناعمتين وأظافر صحية وجذابة."
-      ,"image": fm1
+      ,"image": badikir
     
     }
   ]
   
   return (
     <div id='khadamtona' className='w-full max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
-            <p className='text-4xl mb-5 underline text-blue-700 font-semibold'>خدماتنا</p>
-    <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
+            <p className='text-4xl mb-5  text-primary font-semibold'>خدماتنا</p>
+      {/* <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
           <CarouselContent className="-ml-1">
             {
               massages.map((massage) => (
@@ -160,7 +163,16 @@ export default function Massages() {
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
-        </Carousel>
+        </Carousel> */}
+        <div className='flex flex-wrap lg:w-[40rem] justify-center'>
+        {
+              massages.map((massage) => (
+                <div className="p-1  lg:w-[300px] w-[200px]">
+                    <CardMassage type={massage.service} price={massage.price} description={massage.description} image={massage.image} />
+                </div>
+              ))
+        }
+        </div>
     </div>
   )
 }

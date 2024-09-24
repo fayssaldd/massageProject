@@ -10,7 +10,7 @@ export default function Layout() {
     </header>
     <div
     className="relative w-full flex justify-center top-16">
-        <div className="rounded-l max-w-full rounded-lg ">
+        <div className="bg-gray-50 rounded-l w-full rounded-lg ">
             <Outlet />
         </div>
     </div>

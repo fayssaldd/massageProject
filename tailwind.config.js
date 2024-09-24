@@ -26,11 +26,11 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: '#4CAF50',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
+  				DEFAULT: '#FFC107',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			muted: {
@@ -45,6 +45,11 @@ export default {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
+			  hover: '#388E3C',
+			  active: '#2E7D32',
+			  background: '#F5F5F5',
+			  text: '#212121',
+			  link: '#1E88E5',
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',

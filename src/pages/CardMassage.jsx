@@ -11,18 +11,19 @@ import { MessageCircleCode, Phone } from 'lucide-react'
 export default function CardMassage({type,description,image,price}) {
   return (
     <>
-        <Card dir='rtl'  className="shadow dark:text-white text-black " >
-            <CardHeader>
+        <Card dir='rtl'  className="shadow  dark:text-white text-black " >
+            <CardHeader className={'mb-3'} >
                 <CardTitle>{type}</CardTitle>
-                <CardDescription>{description}</CardDescription>
+                {/* <CardDescription>{description}</CardDescription> */}
             </CardHeader>
-            <CardContent className="flex aspect-square items-center justify-center ">
-                <img className='w-full' src={`${image}`} alt="" />
+            <CardContent className="flex flex-col max-sm:h-[20rem] aspec-square mb-2 items-center justify-center ">
+                <CardDescription>{description}</CardDescription>
+                <img className='rounded mt-2 w-[10rem] h-[10rem]' src={`${image}`} alt="" />
             </CardContent>
-            <CardFooter className={'flex justify-between items-center p-4 border-t-2'}>
-                <div className=''>
-                  <p className='text-slate-300 font-bold  line-through'>{price + 100}</p>
-                  <p className='text-red-500 font-bold font-mono'> {price} ر.س</p>
+            <CardFooter className={'flex  max-sm:flex-col justify-between items-center p-4 border-t-2'}>
+                <div className='flex flex-row-reverse items-center justify-between max-sm:pb-4'>
+                  <p className='text-slate-300 font-bold mx-2 line-through'>{price + 100}  ر.س</p>
+                  <p className='text-red-500 font-bold font-mono'> {price}ر.س</p>
                 </div>
                 <div className='flex'>
                   <a href='https://wa.me/12345954' >
