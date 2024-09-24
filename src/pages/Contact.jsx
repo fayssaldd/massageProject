@@ -18,11 +18,12 @@ export default function Contact() {
              </span>
             </p>
         </div>
-        <p className='text-4xl mb-7 text-center text-primary font-semibold'>تواصل معنا </p>
-        <p className='text-center mb-7'>
-            "هل لديك أي استفسارات أو تحتاج إلى مساعدة سريعة؟ نحن هنا لخدمتك! تواصل معنا عبر واتساب مباشرة للحصول على استجابة فورية ومساعدة مخصصة. لا تتردد، نحن جاهزون للرد على جميع أسئلتك!"
-        </p>
-        <a 
+        <div className='backdrop-brightness-75 border p-2 pb-4'>
+          <p className='text-4xl mb-7 text-center text-secondary underline font-semibold'>تواصل معنا </p>
+          <p className='text-center mb-7 text-white'>
+            هل لديك أي استفسارات أو تحتاج إلى مساعدة سريعة؟ نحن هنا لخدمتك! تواصل معنا عبر واتساب مباشرة للحصول على استجابة فورية ومساعدة مخصصة. لا تتردد، نحن جاهزون للرد على جميع أسئلتك!"
+          </p>
+          <a 
             initial={{y:-5,scale:1}}
             animate={{y:0,scale: 1.2}}
             transition={{ repeat: Infinity, duration: 2 }}
@@ -30,11 +31,13 @@ export default function Contact() {
             // transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
             href="https://wa.me/1234567890" // Remplace par ton numéro WhatsApp
             target="_blank"
-            className='flex flex-row-reverse items-center justify-center text-3xl'
+            className='flex text-white flex-row-reverse items-center justify-center text-3xl'
             >
             <img className='w-20' src={whatsappImage} alt="" />
             004345545353
         </a> 
+        </div>
+
     </div>
     </>
   )

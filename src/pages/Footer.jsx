@@ -2,7 +2,7 @@ import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 import React from 'react';
 function Footer() {
   return (
-    <footer  dir='rtl'  className="bg-gray-800 flex max-sm:flex-col justify-center items-center w-full text-white ">
+    <footer  dir='rtl'  className="bg-gray-800 p-4 flex max-sm:flex-col justify-center items-center w-full text-white ">
       
 
       {/* Copyright */}

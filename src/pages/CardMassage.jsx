@@ -12,13 +12,13 @@ export default function CardMassage({type,description,image,price}) {
   return (
     <>
         <Card dir='rtl'  className="shadow  dark:text-white text-black " >
-            <CardHeader className={'mb-3'} >
+            <CardHeader className={''} >
                 <CardTitle>{type}</CardTitle>
                 {/* <CardDescription>{description}</CardDescription> */}
             </CardHeader>
             <CardContent className="flex flex-col aspec-square mb-2 items-center justify-center ">
                 <CardDescription>{description}</CardDescription>
-                <img className='rounded mt-2 ' src={`${image}`} alt="" />
+                <img className='rounded mt-4 ' src={`${image}`} alt="" />
             </CardContent>
             <CardFooter className={'flex justify-between items-center p-4 border-t-2'}>
                 <div className='flex flex-row-reverse items-center justify-between max-sm:pb-4'>

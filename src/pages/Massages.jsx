@@ -8,6 +8,7 @@ import fm1 from '../assets/images/fm1.jpg'
 import vip from '../assets/images/vip.png'
 import mvip from '../assets/images/mvip.jpg'
 import wax from '../assets/images/wax.jpg'
+import wax2 from '../assets/images/wax2.jpg'
 import malaki from '../assets/images/malaki.jpg'
 import marocain from '../assets/images/marocain.jpg'
 import badikir from '../assets/images/badikir.jpg'
@@ -126,7 +127,7 @@ export default function Massages() {
       "service": "إزالة الشعر بالخيط",
       "price": 400,
       "description": "تقنية فعّالة ولطيفة لإزالة الشعر غير المرغوب فيه باستخدام الخيط، مثالية للمناطق الحساسة وتضمن الحصول على بشرة ناعمة ونظيفة."
-      ,"image": fm1
+      ,"image": wax2
     
     },
     {
@@ -146,8 +147,8 @@ export default function Massages() {
   ]
   
   return (
-    <div id='khadamtona' className='w-full max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
-            <p className='text-4xl mb-5  text-primary font-semibold'>خدماتنا</p>
+    <div id='khadamtona' className='backdrop-brightness-75  pt-6  w-full max-sm:mt-8 mt-16 flex flex-col justify-center items-center'>
+            <p className='text-4xl mb-5  text-secondary underline font-semibold'>خدماتنا</p>
       {/* <Carousel className="w-[30rem] lg:w-full   max-sm:w-80  max-w-4xl">
           <CarouselContent className="-ml-1">
             {

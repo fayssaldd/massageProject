@@ -2,6 +2,8 @@ import React from 'react'
 import massage4 from '../assets/images/massage4.jpg'
 import Massages from './Massages'
 import { MessageCircleCode, Phone } from 'lucide-react'
+import backgroundImg from '../assets/background.jpg'
+
 export default function Home() {
 
 
@@ -9,8 +11,8 @@ export default function Home() {
     <>
      
       <div id='raisia' 
-      // style={{ backgroundImage: `url(${massage4})` }} 
-      className={`flex bg-secondary w-full lg:grid-cols-4 md:grid-cols-2  items-center  bg-cover lg:gap-8 gap-4 h-screen max-sm:h-[85vh] p-3`}>
+      // style={{ backgroundImage: `url(${backgroundImg})` }} 
+      className={`flex w-full lg:grid-cols-4 md:grid-cols-2  items-center  bg-cover lg:gap-8 gap-4 h-screen max-sm:h-[85vh] p-3`}>
 
         <div className="backdrop-brightness-50 backdrop-blur-sm p-7 w-full max-md:order-1 max-sm:mt-9 items-center flex flex-col justify-center lg:col-span-2  md:rounded-br-xl lg:p-12">
           <div dir='rtl' className="text-6xl pb-8 font-semibold inline-flex italic items-center text-black dark:text-white ">
